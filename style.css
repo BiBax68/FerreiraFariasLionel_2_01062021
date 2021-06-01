@@ -1,0 +1,21 @@
+.head {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar {
+    font-family: 'Raleway', sans-serif;
+}
+
+.search{
+    position: relative;
+}
+
+.searchicone {
+    position:absolute;
+    top: 180px;
+    color: red;
+    left: 2px;
+    font-size: 21px;
+    width: 50px;
+}
+
