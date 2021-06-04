@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/4a28cb476f.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <i class="fas fa-heart"></i>
-    <p> ufeihfuehfuehe </p>
-</body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservia</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Comment trouver le lien de fontawesome ???-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="head">
+            <div class="reservia">
+                <img class="image" src="/Reservia/images/logo/Reservia.svg">
+            </div>
+            <a href="C:\Users\Bibax\Desktop\Reservia\Reservia">S'inscrire</a>
+            <a href="#hebergements">Hebergements</a>
+            <a href="#activites">Activités</a>
+        </header>
+    
+        <main>
+            <div class="sidebar">
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                <p>En plein centre ville ou en pleine nature</p>
+    
+                <div class="searchbox">
+                    <span class="searchicone"><i class="fas fa-map-marker-alt"></i></span>
+                    <input type="text" name="localisation" placeholder="Marseille, France" class="searchbar"/> 
+                    <button type="button" id="loupebutton"> <i class="fas fa-location-arrow"></i></button>
+                </div>
+    
+                <section class="filtres">
+                    <h3>Filtres</h3>
+                    <div class="filtreboutton"> <!--???????????? Div utile ?????????????????-->
+                        <div class="bouttonfiltre">
+                            <i class="fas fa-money-bill-wave"></i>
+                            Economique
+                        </div>
+                        <div class="bouttonfiltre">
+                            <i class="fas fa-child"></i>
+                            Familial
+                        </div>
+                        <div class="bouttonfiltre">
+                            <i class="fas fa-heart"></i>
+                            Romantique
+                        </div>
+                        <div class="bouttonfiltre">
+                            <i class="fas fa-dog"></i>
+                            Animaux autorisés
+                        </div>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerblocs">
+                <div class="footerbloc">
+                    <h4 class="footertitre">A propos</h4>
+                    <a class="footerlien">Fonctionnement du site</a>
+                    <a class="footerlien">Conditions générales de vente</a>
+                    <a class="footerlien">Données et confidentialité</a>
+                </div>
+                <div class="footerbloc">
+                    <h4 class="footertitre">Nos hébergements</h4>
+                    <a class="footerlien">Charte qualité</a>
+                    <a class="footerlien">Soumettre votre hôtel</a>
+                </div>
+                <div class="footerbloc">
+                    <h4 class="footertitre">Assistance</h4>
+                    <a class="footerlien">Centre d'aide</a>
+                    <a class="footerlien">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
