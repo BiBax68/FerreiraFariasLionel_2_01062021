@@ -20,6 +20,22 @@ body{
     width: 50px;
 }
 
+.bouttonfiltre{
+    display: inline;
+    border: solid 2px #e2e2e2;
+    border-radius: 200px;
+    font-weight: 700;
+}
+
+.filtre_icone{
+    display: inline;
+    border-style: hidden;
+    border-radius: 100%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+
 .fa-star{
     color: blue;
 }
