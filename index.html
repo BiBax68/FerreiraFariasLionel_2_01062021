@@ -10,12 +10,12 @@
 
     <body>
         <header class="head">
-            <div class="reservia">
-                <img class="image" src="/Reservia/images/logo/Reservia.svg">
-            </div>
-            <a href="#">S'inscrire</a>
-            <a href="#hebergements">Hebergements</a>
-            <a href="#activites">Activités</a>
+            <img class="image" src="/Reservia/images/logo/Reservia.svg">
+                <nav>
+                    <a href="#hebergements" class="lien">Hebergements</a>
+                    <a href="#activites" class="lien">Activités</a>
+                </nav>
+                <a href="#" class="subs">S'inscrire</a>
         </header>
     
         <main>
@@ -25,7 +25,7 @@
     
                 <form class="searchbox">
                     <span class="searchicone"><i class="fas fa-map-marker-alt"></i></span>
-                    <input type="text" name="localisation" placeholder="Marseille, France" class="searchbar"/> 
+                    <input type="text" name="localisation" placeholder="Marseille, France" class="searchbar"/>
                     <button type="button" class="loupebutton"> <i class="fas fa-location-arrow" style="color: white;"></i></button>
                 </form>
             </section>
@@ -70,8 +70,8 @@
                 <aside class="populaire">
                     <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>  
                         
-                        <article class="annonce_populaire_1">
-                                <figure class="image_populaire" id="image_populaire_1">
+                        <article class="annonce_populaire">
+                                <figure class="image_populaire">
                                     <img src="/Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin">
                                 </figure>
                             <div class="populaire__text">   
@@ -92,8 +92,8 @@
                             </div>     
                         </article>
 
-                        <article class="annonce_populaire_2">
-                            <figure class="image_populaire" id="image_populaire_2">
+                        <article class="annonce_populaire">
+                            <figure class="image_populaire">
                                 <img src="/Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau chambres d'hôtes">
                             </figure>
                         <div class="populaire__text">   
@@ -114,8 +114,8 @@
                         </div>     
                     </article>
 
-                    <article class="annonce_populaire_3">
-                        <figure class="image_populaire" id="image_populaire_3">
+                    <article class="annonce_populaire">
+                        <figure class="image_populaire">
                             <img src="/Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu et blanc">
                         </figure>
                     <div class="populaire__text">   
@@ -140,29 +140,25 @@
                 <div class="Marseille">
                     <h2>Hébergements à Marseille</h2>  
                         
-                        <article class="annonce_marseille_1">
-                                <figure class="image_marseille" id="image_marseille_1">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere">
                                 </figure>
-                            <div class="populaire__text">   
-                                <div class="textannonce">
-                                    <div class="infoannonce">
+                                <div class="populaire__text">   
                                         <h3 class="nomannonce">Auberge la Cannebière</h3>
                                         <p class="prixannonce">Nuit à partir de <b>25€</b></p>
-                                    </div>
-                                </div>
-                                <div class="etoiles">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star grey"></i>
-                                </div>
-                            </div>     
-                        </article>  
+                                        <div class="etoiles">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star grey"></i>
+                                        </div>
+                                </div>     
+                        </article>  <!-- Article ref-->
                         
-                        <article class="annonce_marseille_2">
-                                <figure class="image_marseille" id="image_marseille_2">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
                                 </figure>
                             <div class="populaire__text">   
@@ -182,8 +178,8 @@
                             </div>     
                         </article>
 
-                        <article class="annonce_marseille_3">
-                                <figure class="image_marseille" id="image_marseille_3">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes">
                                 </figure>
                             <div class="populaire__text">   
@@ -203,8 +199,8 @@
                             </div>     
                         </article>
 
-                        <article class="annonce_marseille_4">
-                                <figure class="image_marseille" id="image_marseille_4">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="auberge de la mer">
                                 </figure>
                             <div class="populaire__text">   
@@ -224,8 +220,8 @@
                             </div>     
                         </article>
 
-                        <article class="annonce_marseille_5">
-                                <figure class="image_marseille" id="image_marseille_5">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier">
                                 </figure>
                             <div class="populaire__text">   
@@ -245,8 +241,8 @@
                             </div>     
                         </article>
 
-                        <article class="annonce_marseille_6">
-                                <figure class="image_marseille" id="image_marseille_6">
+                        <article class="annonce_marseille">
+                                <figure class="image_marseille">
                                     <img src="/Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina">
                                 </figure>
                             <div class="populaire__text">   
@@ -267,76 +263,72 @@
                         </article>
                         <h3>Afficher plus</h3>
                 </div>
+            </section>
 
-                <div class="activites">
-                    <h2>Activités à Marseille</h2>
+            <section class="activites">
+                <h2>Activités à Marseille</h2>
 
-                        <article class="activite_1">
-                            <figure class="image_activite" id="image_activite_1">
-                                <img src="/Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Vieux Port</h3>
-                                </div>
+                    <article class="activite_1 activite">
+                        <figure class="image_activite" id="image_activite_1">
+                            <img src="/Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
+                        </figure>
+                        <h3>Vieux Port</h3>
+                    </article> <!-- Article ref-->
+
+                    <article class="activite_2 activite">
+                        <figure class="image_activite" id="image_activite_2">
+                            <img src="/Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
+                        </figure>
+                        <div class="activite__text">
+                            <div class="lieu__activite">
+                                <h3>Fort de Pomègues</h3>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <article class="activite_2">
-                            <figure class="image_activite" id="image_activite_2">
-                                <img src="/Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort de pomegues">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Fort de Pomègues</h3>
-                                </div>
+                    <article class="activite_3 activite">
+                        <figure class="image_activite" id="image_activite_3">
+                            <img src="/Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
+                        </figure>
+                        <div class="activite__text">
+                            <div class="lieu__activite">
+                                <h3>Îles du Frioul</h3>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <article class="activite_3">
-                            <figure class="image_activite" id="image_activite_3">
-                                <img src="/Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles du frioul">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Îles du Frioul</h3>
-                                </div>
+                    <article class="activite_4 activite">
+                        <figure class="image_activite" id="image_activite_4">
+                            <img src="/Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
+                        </figure>
+                        <div class="activite__text">
+                            <div class="lieu__activite">
+                                <h3>Parc National des Calanques</h3>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <article class="activite_4">
-                            <figure class="image_activite" id="image_activite_4">
-                                <img src="/Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc national des calanques">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Parc National des Calanques</h3>
-                                </div>
+                    <article class="activite_5 activite">
+                        <figure class="image_activite" id="image_activite_5">
+                            <img src="/Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
+                        </figure>
+                        <div class="activite__text">
+                            <div class="lieu__activite">
+                                <h3>Notre-Dame-de-la-Garde</h3>
                             </div>
-                        </article>
+                        </div>
+                    </article>
 
-                        <article class="activite_5">
-                            <figure class="image_activite" id="image_activite_5">
-                                <img src="/Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="notre dame de la garde">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Notre-Dame-de-la-Garde</h3>
-                                </div>
+                    <article class="activite_6 activite">
+                        <figure class="image_activite" id="image_activite_6">
+                            <img src="/Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
+                        </figure>
+                        <div class="activite__text">
+                            <div class="lieu__activite">
+                                <h3>Parc Longchamp</h3>
                             </div>
-                        </article>
-
-                        <article class="activite_6">
-                            <figure class="image_activite" id="image_activite_6">
-                                <img src="/Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="parc longchamp">
-                            </figure>
-                            <div class="activite__text">
-                                <div class="lieu__activite">
-                                    <h3>Parc Longchamp</h3>
-                                </div>
-                            </div>
-                        </article>
-                </div>
+                        </div>
+                    </article>
             </section>
         </main>
 

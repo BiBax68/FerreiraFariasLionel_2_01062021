@@ -1,11 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
 
 
 
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
+main, header, .footerblocs{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ /*header*/
+.head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . subs" "nav nav nav";
+}
+
+.image {
+    grid-area: logo;
+    height: 45px;
+    padding: 0 20px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+.lien {
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    padding: 2rem;
+    border: 3px solid transparent;
+}
+
+.lien:hover {
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+
+.subs {
+    grid-area: subs;
+    color :#0065FC;
+    padding: 2rem;
+    font-weight: 600;
+}
+ /*main*/
+
+ /*recherche*/
+
+.searchbox{
+    display: inline;
+    border: solid 1px #e2e2e2;
+    border-radius: 30px 30px 30px 30px / 25px 25px 25px 25px;
+}
 
 .search{
     position: relative;
@@ -42,4 +105,15 @@ body{
 
 .grey{
     color: grey;
+}
+
+.populaire {
+    background-color: grey;
+    border-radius: 15px; 
+}
+
+.annonce_populaire {
+    border-radius: 22px;
+    background-color: white;
+    width:80%;
 }
