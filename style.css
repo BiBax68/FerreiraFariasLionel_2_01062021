@@ -67,48 +67,44 @@ nav {
 
 
 .searchicone {
-    display: relative;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: auto;
+    padding: 1rem 1.25rem;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 5px;
-}
+    text-align: center;
 
-.fas.fa-map-marker-alt::before {
-    display: block;
-    padding-left: 11px;
-    padding-top: 11px;
 }
 
 .searchbar{
-    padding-top: 1fr;
-    padding-bottom: 1fr;
+    padding: 0 1.5rem ;
     border: none;
+    width: 260px;
+    flex: 1;
+    font-size: 1rem;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
 }
 
-/*--
-.search {
-    position: absolute;
+.searchbar::placeholder{
+    color: black;
+    font-weight: bold;
 }
---*/
 
 .loupebutton {
     display: relative;
-    color: grey;
+    color: white;
     border: none;
-    border-radius: 10px;
-    width: 35px;
+    border-radius: 1rem;
     background-color: royalblue;
+    padding: 0 1.10rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .searchbox {
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 40px;
-    height: 40px;
     border: solid 1px #F2F2F2;
     border-radius: 10px;
 }
@@ -119,34 +115,62 @@ nav {
 
 /*--------------------------------------FILTRE----------------------------------*/
 .filtreboutton{
-    display: inline-flex;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     padding: 0;
+    margin-top: 2rem;
 }
 
 .bouttonfiltre{
     display: flex;
-    border: solid 2px #deebff;
-    border-radius: 20px;
-    font-weight: 700;
-    margin-top: 20px;
+    border: solid 2px #D9D9D9;
+    align-items: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
 }
 
 .filtre_icone{
-    display: block ;
+    display: flex ;
     color: #0065FC;
-    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
     background-color: #deebff;
-    border-radius: 20px;
+    border-radius: 100%;
     margin-right: 15px;
-    font-weight: 900;
+    font-weight: bold;
 }
 
-.info {
-    display: inline-block;
+.filtre_text{
+    margin: 0 1rem;
 }
 
+.filtreboutton h3{
+    display: flex;
+    margin: 0 2rem 1rem 0;
+    align-items: center;
+}
+
+.info_icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: solid #D9D9D9 1px;
+    border-radius: 100%;
+    color: #0065FC;
+    margin-right: 1rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
 
 /*---------------------------POPULAIRE----------------------------------*/
 .fa-star{
@@ -158,13 +182,19 @@ nav {
 }
 
 .populaire {
+    display: grid;
     background-color: grey;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
 }
 
 .annonce_populaire {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
     border-radius: 15px;
     background-color: white;
-    width: 80%;
     margin: auto;
 }
 
