@@ -33,7 +33,7 @@ a {
 .image {
     grid-area: logo;
     height: 45px;
-    padding: 0 20px;
+    padding: 1.25rem 2rem;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav {
     grid-area: subs;
     color :#0065FC;
     padding: 2rem;
-    font-weight: 600;
+    font-weight: 800;
 }
  /*------------------------------------------------------MAIN---------------------------------------------------------*/
 
@@ -142,8 +142,9 @@ nav {
     width: 3rem;
     background-color: #deebff;
     border-radius: 100%;
-    margin-right: 15px;
+    /*margin-right: 5px;*/
     font-weight: bold;
+    margin: -0.1rem;
 }
 
 .filtre_text{
@@ -152,7 +153,7 @@ nav {
 
 .filtreboutton h3{
     display: flex;
-    margin: 0 2rem 1rem 0;
+    margin: 0 15rem 1rem 0;
     align-items: center;
 }
 
@@ -292,6 +293,10 @@ nav {
 .etoilesmarseille {
     margin: 0.5rem 0.75rem 0 0.75rem;
     font-size: 13px;
+}
+
+.marseille h3{
+    cursor: pointer;
 }
 
 /*---------------------------ACTIVITES----------------------------------*/
