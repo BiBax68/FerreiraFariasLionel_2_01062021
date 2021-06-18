@@ -61,6 +61,20 @@ nav {
     padding: 2rem;
     font-weight: 800;
 }
+
+@media screen and (min-width: 600px) {
+    .head {
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo . nav subs";
+    }
+    .subs {
+        margin-top: 3px;
+    }
+    .lien:hover {
+        border-top: 3px solid #0065FC;
+        border-bottom-color: transparent;
+    }   
+}
  /*------------------------------------------------------MAIN---------------------------------------------------------*/
 
  /*--------------------------------RECHERCHE------------------------------------*/
@@ -174,6 +188,11 @@ nav {
     align-items: center;
 }
 
+@media screen and (min-width: 542px) {
+    .filtreboutton h3{
+        margin-right: 1.5rem;
+    }
+}
 /*---------------------------POPULAIRE----------------------------------*/
 .fa-star{
     color: blue;
@@ -248,6 +267,7 @@ nav {
 .etoiles{
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
+
 /*---------------------------MARSEILLE----------------------------------*/
 .marseille{
     display: grid;
@@ -260,7 +280,8 @@ nav {
 }
 
 .marseille h2{
-    margin: 0;
+    margin-top: 1rem;
+    grid-column: 1/-1;
 }
 
 .annonce_marseille{
@@ -299,6 +320,12 @@ nav {
     cursor: pointer;
 }
 
+@media screen and (min-width:800px) and (max-width:1049px){
+    .marseille {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
 /*---------------------------ACTIVITES----------------------------------*/
 
 
@@ -339,6 +366,17 @@ nav {
 .activite h3{
     margin: 1.2rem 1.5rem;
 }
+
+.activites h2 {
+    grid-column: 1/-1;
+}
+
+@media screen and (min-width:800px) and (max-width:1049px){
+    .activites {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto repeat(3, 12rem);
+    }    
+}
 /*----------------------------------------------FOOTER--------------------------------------------------------------*/
 
 footer{
@@ -360,4 +398,15 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width:800px) and (max-width:1049px){
+    .footerblocs {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footerbloc {
+        width: 33%;
+    }
 }
