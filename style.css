@@ -48,6 +48,7 @@ nav {
     font-weight: 500;
     padding: 2rem;
     border: 3px solid transparent;
+    border-bottom:3px solid #F2F2F2;
 }
 
 .lien:hover {
@@ -72,6 +73,9 @@ nav {
     }
     .lien:hover {
         border-top: 3px solid #0065FC;
+        border-bottom-color: transparent;
+    }
+    .lien {
         border-bottom-color: transparent;
     }   
 }
